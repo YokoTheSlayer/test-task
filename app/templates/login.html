@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="{{ static('styles.css') }}" rel="stylesheet">
+</head>
+<body>
+
+<form class="login-form" method="post" action="/auth/login" style="max-width:500px;margin:auto">
+    <h3 class="title">SIGN UP WITH</h3>
+    <div class="input-container-socials">
+        <div class="fb"><i class="fa fa-facebook icon"></i><a class='social'
+                                                              href="https://www.facebook.com/v6.0/dialog/oauth?client_id=518326962426522&redirect_uri=http://localhost:8080/success&state=st=state123abc,ds=123456789">FACEBOOK </a>
+        </div>
+        <p>/</p>
+        <div class="google"><i class="fa fa-google icon"></i><a class="social" href="/google/auth">GOOGLE </a></div>
+    </div>
+    <div class="horizontalLine">
+        <hr/>
+        <div class="text1">or</div>
+    </div>
+    <div style="max-width:400px;margin:auto">
+        <div class="input-icons">
+            <i class="fa fa-envelope icon"></i>
+            <input class="input-field" type="text" placeholder="Email" name="email">
+            <i class="fa fa-lock icon"></i>
+            <input class="input-field" type="text" placeholder="Password" name="password">
+        </div>
+    </div>
+    <button type="submit" class="btn_login">LOG IN</button>
+</form>
+
+</body>
+</html>
